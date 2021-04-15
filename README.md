@@ -22,3 +22,26 @@ The Cosine similarity is advantageous because even if the two similar documents 
 
 
 
+# IMPLEMENTATION
+
+1 Preprocessing 
+
+We started our project with the preprocessing of the dataset. Initially our dataset file (movie _metadata.csv) contains columns color,  director_name,  num_critics_for_review, duration and many more, there were a total 28 columns. 
+We extracted the features which are required for our recommendation system. The features which we extracted were director_name, actor1_name, actor2_name, actor3_name, genres, movie_title and a combined attribute which we made by ourselves, it is a combination of all the previous attributes. 
+The final data is stored in the final_dataset.csv file.
+
+2  Model Making:
+We designed the model for our recommendation system, we started with tokenizing the column  “combined” and made a collection of text documents and built a vocabulary of known words using the CountVectorizer function.
+After that we learn the dictionary and store the document-term matrix in the final_cv variable.
+Next, we calculate the cosine similarity among the text documents and store their value in the variable similarity. Lastly we made a function named rcmd in which we passed our input movie as the argument. Function returns the list of 12 movies which are most similar with our input movie. 
+              
+3 Hosting our system over a Local Server : 
+We used flask python library to host our system over a local server.
+
+3.1 What is Flask? 
+Flask is a lightweight WSGI  Web application framework. This means flask provides you with tools, libraries and technologies that allow you to build a web application. This web application can be some web pages, a blog, a wiki or go as big as a web-based calendar application or a commercial website.
+Flask is part of the categories of the micro-framework. Micro-framework are normally frameworks with little to no dependencies to external libraries. This has pros and cons. Pros would be that the framework is light, there is little dependency to update and watch for security bugs, cons is that some time you will have to do more work by yourself or increase yourself the list of dependencies by adding plugins.
+
+
+
+https://nimisha-singh.github.io/Movie-Recommender-System/
