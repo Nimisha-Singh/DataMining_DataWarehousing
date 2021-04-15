@@ -36,7 +36,7 @@ After that we learn the dictionary and store the document-term matrix in the fin
 Next, we calculate the cosine similarity among the text documents and store their value in the variable similarity. Lastly we made a function named rcmd in which we passed our input movie as the argument. Function returns the list of 12 movies which are most similar with our input movie. 
               
 3 Hosting our system over a Local Server : 
-We used flask python library to host our system over a local server.
+We used flask, micro web framework written in python, to host our system over a local server.
 
 3.1 What is Flask? 
 Flask is a lightweight WSGI  Web application framework. This means flask provides you with tools, libraries and technologies that allow you to build a web application. This web application can be some web pages, a blog, a wiki or go as big as a web-based calendar application or a commercial website.
